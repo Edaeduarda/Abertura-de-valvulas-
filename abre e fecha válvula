@@ -1,0 +1,69 @@
+
+// Declarando variaveis das valvulas
+ var VAL_DRENO_214_TM_SL3 = flow.get("VAL_DRENO_214_TM_SL3")
+ var VAL_DRENO_215_TM_SL3 = flow.get("VAL_DRENO_215_TM_SL3")
+ var VAL_DRENO_212_FP_SL3 = flow.get("VAL_DRENO_212_FP_SL3")
+ var VAL_DRENO_280_FP_SL3 = flow.get("VAL_DRENO_280_FP_SL3")
+ var VAL_DRENO_89_CZ_SL3 = flow.get("VAL_DRENO_89_CZ_SL3")
+ var VAL_DRENO_92_CZ_SL3 = flow.get("VAL_DRENO_92_CZ_SL3")
+ var VAL_DRENO_77_TQ_INTERMED_SL3 = flow.get("VAL_DRENO_77_TQ_INTERMED_SL3")
+ var VAL_DRENO_258_MECHAMASHER_SL3 = flow.get("VAL_DRENO_258_MECHAMASHER_SL3")
+ var VAL_DRENO_263_MECHAMASHER_SL3 = flow.get("VAL_DRENO_263_MECHAMASHER_SL3")
+ var VAL_DRENO_301_CIP_SL3 = flow.get("VAL_DRENO_301_CIP_SL3")
+ var VAL_DRENO_305_CIP_SL3 = flow.get("VAL_DRENO_305_CIP_SL3")
+ 
+ 
+ 
+// Declarando variaveis de status
+var status_Dreno_214_TM_SL3 = 0
+var status_Dreno_215_TM_SL3 = 0
+var status_Dreno_212_FP_SL3 = 0
+var status_Dreno_280_FP_SL3 = 0
+var status_Dreno_89_CZ_SL3 = 0
+var status_Dreno_92_CZ_SL3 = 0
+var status_Dreno_77_TQ_INTERMED_SL3 = 0
+var status_Dreno_258_MECHAMASHER_SL3 = 0
+var status_Dreno_263_MECHAMASHER_SL3 = 0
+var status_Dreno_301_CIP_SL3 = 0
+var status_Dreno_305_CIP_SL3 = 0
+
+
+
+// Se verdadeiro move 1 para a variavel status
+if(VAL_DRENO_214_TM_SL3 == true){status_Dreno_214_TM_SL3 = 1}
+if(VAL_DRENO_215_TM_SL3 == true){status_Dreno_215_TM_SL3 = 1}
+if(VAL_DRENO_212_FP_SL3 == true){status_Dreno_212_FP_SL3 = 1}
+if(VAL_DRENO_280_FP_SL3 == true){status_Dreno_280_FP_SL3 = 1}
+if(VAL_DRENO_89_CZ_SL3 == true){status_Dreno_89_CZ_SL3 = 1}
+if(VAL_DRENO_92_CZ_SL3 == true){status_Dreno_92_CZ_SL3 = 1}
+if(VAL_DRENO_77_TQ_INTERMED_SL3 == true){status_Dreno_77_TQ_INTERMED_SL3 = 1}
+if(VAL_DRENO_258_MECHAMASHER_SL3 == true){status_Dreno_258_MECHAMASHER_SL3 = 1}
+if(VAL_DRENO_263_MECHAMASHER_SL3 == true){status_Dreno_263_MECHAMASHER_SL3 = 1}
+if(VAL_DRENO_301_CIP_SL3 == true){status_Dreno_301_CIP_SL3 = 1}
+if(VAL_DRENO_305_CIP_SL3 == true){status_Dreno_305_CIP_SL3 = 1}
+
+
+
+msg.payload={
+    
+    
+    status_Dreno_214_TM_SL3,
+    status_Dreno_215_TM_SL3,
+    
+    status_Dreno_212_FP_SL3,
+    status_Dreno_280_FP_SL3,
+    
+    status_Dreno_89_CZ_SL3,
+    status_Dreno_92_CZ_SL3,
+    
+    status_Dreno_77_TQ_INTERMED_SL3,
+    
+    status_Dreno_258_MECHAMASHER_SL3,
+    status_Dreno_263_MECHAMASHER_SL3,
+    status_Dreno_301_CIP_SL3,
+    
+    status_Dreno_305_CIP_SL3,
+    
+   
+}
+return msg;
